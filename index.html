@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><div Lianzhe="" Zheng=""></div> — Licensed Psychologist</title>
+  <meta name="description" content="Professional psychological services including therapy for anxiety, depression, trauma, and more. Book your appointment today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="top">
+    <div class="container navbar__inner">
+      <a href="#top" class="navbar__logo">
+        <!-- REPLACE: Psychologist's name or practice name -->
+        <span class="logo-name">[Psychologist Name]</span>
+        <span class="logo-credentials">[PhD / PsyD / LCSW]</span>
+      </a>
+
+      <nav class="navbar__links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#topics">Topics</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#book">Book Appointment</a>
+        <a href="#intake">Intake Form</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Licensed Psychologist</p>
+        <!-- REPLACE: Name and credentials -->
+        <h1 class="hero__name">[Psychologist Name], <span>[PhD]</span></h1>
+        <p class="hero__tagline">
+          Compassionate, evidence-based care to help you live a fuller,
+          more meaningful life.
+        </p>
+        <div class="hero__ctas">
+          <a href="#book" class="btn btn--primary">Book an Appointment</a>
+          <a href="#about" class="btn btn--secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero__image-wrap">
+        <div class="hero__image-placeholder" aria-label="Office environment">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="100" cy="100" r="100" fill="#E8F0E9"/>
+            <circle cx="100" cy="80" r="35" fill="#B5CEAF"/>
+            <ellipse cx="100" cy="155" rx="55" ry="35" fill="#B5CEAF"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container about__inner">
+      <div class="about__photo-wrap">
+        <!-- REPLACE: swap src with real headshot path, update alt text -->
+        <img
+          src="https://placehold.co/400x500/e8f0e9/4a7c59?text=Photo"
+          alt="[Psychologist Name] headshot"
+          class="about__photo"
+          width="400"
+          height="500"
+        />
+      </div>
+      <div class="about__content">
+        <p class="section__eyebrow">About Me</p>
+        <h2 class="section__title">A Safe Space to Heal &amp; Grow</h2>
+        <!-- REPLACE: Real bio -->
+        <p>
+          I am a licensed psychologist with over [X] years of experience helping
+          individuals navigate life's most challenging moments. My practice is grounded
+          in empathy, respect, and the belief that every person carries within them
+          the capacity for meaningful change.
+        </p>
+        <p>
+          I earned my [degree] from [University] and have received specialized training
+          in [specialty areas]. I work with adults and adolescents, and I am committed
+          to creating a warm, non-judgmental environment where you feel truly heard.
+        </p>
+        <ul class="about__credentials">
+          <!-- REPLACE: Real credentials -->
+          <li>Licensed Psychologist — [License # / State]</li>
+          <li>[Degree], [University], [Year]</li>
+          <li>Member, [Professional Association]</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SPECIALTY TOPICS — links to psychoeducation articles
+  ============================================================ -->
+  <section class="topics section section--alt" id="topics">
+    <div class="container topics__inner">
+
+      <div class="topics__list">
+        <p class="section__eyebrow">What I Treat</p>
+        <h2 class="section__title">Specialty Topics</h2>
+        <p class="topics__intro">
+          Explore in-depth, evidence-based articles on the areas I specialize in.
+          Each topic below links to a free psychoeducation resource.
+        </p>
+
+        <!-- REPLACE: Edit, add, or remove topics to match actual specialties -->
+
+        <a class="topic-card" href="articles/anxiety-ocd.html">
+          <span class="topic-card__icon" aria-hidden="true">🧠</span>
+          <span class="topic-card__text">
+            <h3>Anxiety &amp; OCD Treatment</h3>
+            <p>Understanding anxiety disorders and obsessive-compulsive patterns, and how evidence-based therapy can help you regain control.</p>
+          </span>
+          <span class="topic-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="topic-card" href="articles/trauma-ptsd.html">
+          <span class="topic-card__icon" aria-hidden="true">🩹</span>
+          <span class="topic-card__text">
+            <h3>Trauma &amp; PTSD Treatment</h3>
+            <p>How trauma affects the mind and body, and the path toward healing through trauma-informed care.</p>
+          </span>
+          <span class="topic-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="topic-card" href="articles/psycho-oncology.html">
+          <span class="topic-card__icon" aria-hidden="true">🎗️</span>
+          <span class="topic-card__text">
+            <h3>Psycho-Oncology</h3>
+            <p>Psychological support for individuals and families navigating a cancer diagnosis and treatment.</p>
+          </span>
+          <span class="topic-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="topic-card" href="articles/womens-wellness.html">
+          <span class="topic-card__icon" aria-hidden="true">🌸</span>
+          <span class="topic-card__text">
+            <h3>Women's Wellness</h3>
+            <p>Mental health support tailored to the unique experiences of women across life stages.</p>
+          </span>
+          <span class="topic-card__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="topics__aside">
+        <!-- REPLACE: swap src with a real supporting image -->
+        <img
+          src="https://placehold.co/480x560/e8f0e9/4a7c59?text=Resources"
+          alt="Psychoeducation resources"
+          class="topics__aside-image"
+          width="480"
+          height="560"
+        />
+        <p class="topics__aside-caption">
+          Each topic links to a free, in-depth article — written to help you
+          understand what you're experiencing and what treatment can look like.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+  ============================================================ -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <p class="section__eyebrow text-center">Getting Started</p>
+      <h2 class="section__title text-center">How It Works</h2>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step__number">1</div>
+          <h3>Reach Out</h3>
+          <p>Complete the intake form below or send me a message. I'll respond within one business day.</p>
+        </div>
+
+        <div class="step__divider" aria-hidden="true"></div>
+
+        <div class="step">
+          <div class="step__number">2</div>
+          <h3>Book a Session</h3>
+          <p>Use the calendar below to choose a time that works for you — a free 15-minute consultation is always available.</p>
+        </div>
+
+        <div class="step__divider" aria-hidden="true"></div>
+
+        <div class="step">
+          <div class="step__number">3</div>
+          <h3>Begin Your Journey</h3>
+          <p>We'll meet, get to know each other, and build a personalised plan to help you thrive.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BOOK AN APPOINTMENT — Calendly embed
+  ============================================================ -->
+  <section class="booking section section--alt" id="book">
+    <div class="container">
+      <p class="section__eyebrow text-center">Schedule</p>
+      <h2 class="section__title text-center">Book an Appointment</h2>
+      <p class="section__subtitle text-center">
+        Choose a date and time that works for you directly from the calendar below.
+      </p>
+
+      <!-- Calendly inline widget -->
+      <!-- REPLACE: Change data-url to your actual Calendly link, e.g.:
+           data-url="https://calendly.com/yourname/consultation"
+      -->
+      <div
+        class="calendly-inline-widget"
+        data-url="https://calendly.com/YOUR_CALENDLY_URL"
+        style="min-width:320px;height:700px;"
+      ></div>
+      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       INTAKE FORM — Formspree
+  ============================================================ -->
+  <section class="intake section" id="intake">
+    <div class="container intake__inner">
+      <div class="intake__intro">
+        <p class="section__eyebrow">New Clients</p>
+        <h2 class="section__title">Client Intake Form</h2>
+        <p>
+          Please fill out this form so I can learn a little about you before
+          our first meeting. All information is kept strictly confidential.
+        </p>
+        <p class="intake__note">
+          Fields marked <span aria-hidden="true">*</span><span class="sr-only">with an asterisk</span> are required.
+        </p>
+      </div>
+
+      <!-- REPLACE: Change action to your Formspree endpoint.
+           Sign up at formspree.io → create a form → copy the endpoint URL.
+           Example: action="https://formspree.io/f/xabc1234"
+      -->
+      <form
+        id="intake-form"
+        class="intake-form"
+        action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+        method="POST"
+        novalidate
+      >
+        <div class="form-row">
+          <div class="form-group">
+            <label for="full-name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="full-name" name="full_name" required autocomplete="name" placeholder="Jane Smith" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 (555) 000-0000" />
+          </div>
+          <div class="form-group">
+            <label for="preferred-times">Preferred Appointment Times</label>
+            <select id="preferred-times" name="preferred_times">
+              <option value="" disabled selected>Select a preference</option>
+              <option value="weekday-morning">Weekday Mornings</option>
+              <option value="weekday-afternoon">Weekday Afternoons</option>
+              <option value="weekday-evening">Weekday Evenings</option>
+              <option value="weekend">Weekends</option>
+              <option value="flexible">Flexible</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for Seeking Therapy <span aria-hidden="true">*</span></label>
+          <textarea
+            id="reason"
+            name="reason"
+            rows="5"
+            required
+            placeholder="Please briefly describe what brings you to therapy and what you hope to work on..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="referral">How Did You Hear About Me?</label>
+          <select id="referral" name="referral_source">
+            <option value="" disabled selected>Select one</option>
+            <option value="google">Google Search</option>
+            <option value="psychology-today">Psychology Today</option>
+            <option value="referral">Referral from Doctor / Therapist</option>
+            <option value="friend-family">Friend or Family</option>
+            <option value="social-media">Social Media</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group form-group--checkbox">
+          <label class="checkbox-label">
+            <input type="checkbox" name="consent" required />
+            <span>I understand that submitting this form does not constitute a therapeutic relationship and that my information will be kept confidential. <span aria-hidden="true">*</span></span>
+          </label>
+        </div>
+
+        <div class="form__actions">
+          <button type="submit" class="btn btn--primary btn--wide">Submit Intake Form</button>
+        </div>
+
+        <!-- Success / error messages shown by main.js -->
+        <div id="form-success" class="form-feedback form-feedback--success" hidden>
+          <strong>Thank you!</strong> Your intake form has been received. I'll be in touch within one business day.
+        </div>
+        <div id="form-error" class="form-feedback form-feedback--error" hidden>
+          <strong>Something went wrong.</strong> Please try again or email me directly.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER / CONTACT
+  ============================================================ -->
+  <footer class="footer" id="contact">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <!-- REPLACE: Name -->
+        <p class="footer__name">[Psychologist Name], <span>[PhD]</span></p>
+        <p class="footer__title">Licensed Psychologist</p>
+        <p class="footer__tagline">Compassionate care for a healthier mind.</p>
+      </div>
+
+      <div class="footer__contact">
+        <h3>Contact</h3>
+        <ul>
+          <!-- REPLACE: Real contact details -->
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contact@email.com">[contact@email.com]</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 17z"/></svg>
+            <a href="tel:+15550000000">[Phone Number]</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>[Office Address, City, State ZIP]</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__hours">
+        <h3>Office Hours</h3>
+        <!-- REPLACE: Real hours -->
+        <ul>
+          <li><span>Monday – Thursday</span><span>9 am – 6 pm</span></li>
+          <li><span>Friday</span><span>9 am – 4 pm</span></li>
+          <li><span>Saturday</span><span>By appointment</span></li>
+          <li><span>Sunday</span><span>Closed</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <!-- REPLACE: Name and year -->
+        <p>&copy; 2026 [Psychologist Name]. All rights reserved.</p>
+        <p class="footer__disclaimer">
+          This website is for informational purposes only and does not constitute
+          medical or psychological advice. If you are in crisis, please call
+          <a href="tel:988">988</a> (Suicide &amp; Crisis Lifeline) or your local emergency services.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
