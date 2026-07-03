@@ -39,6 +39,67 @@
   </header>
 
   <!-- ============================================================
+       SIDEBAR — fixed left panel (desktop only)
+  ============================================================ -->
+  <aside class="sidebar" id="sidebar" aria-label="Site sidebar">
+
+    <div class="sidebar__profile">
+      <div class="sidebar__avatar-wrap">
+        <!-- REPLACE: src with real headshot path -->
+        <img
+          src="https://placehold.co/120x120/e8f0e9/4a7c59?text=LZ"
+          alt="Lianzhe Zheng, PhD"
+          class="sidebar__avatar"
+          width="120"
+          height="120"
+        />
+      </div>
+      <p class="sidebar__name">Lianzhe Zheng</p>
+      <p class="sidebar__credentials">PhD &mdash; Licensed Psychologist</p>
+      <p class="sidebar__tagline">Compassionate, evidence-based care.</p>
+    </div>
+
+    <hr class="sidebar__divider" />
+
+    <nav class="sidebar__topics" aria-label="Specialty topics">
+      <p class="sidebar__section-label">Specialty Topics</p>
+      <ul>
+        <li>
+          <a class="sidebar__link" href="articles/anxiety-ocd.html">
+            <span aria-hidden="true">🧠</span>
+            <span>Anxiety &amp; OCD</span>
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__link" href="articles/trauma-ptsd.html">
+            <span aria-hidden="true">🩹</span>
+            <span>Trauma &amp; PTSD</span>
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__link" href="articles/psycho-oncology.html">
+            <span aria-hidden="true">🎗️</span>
+            <span>Psycho-Oncology</span>
+          </a>
+        </li>
+        <li>
+          <a class="sidebar__link" href="articles/womens-wellness.html">
+            <span aria-hidden="true">🌸</span>
+            <span>Women's Wellness</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <hr class="sidebar__divider" />
+
+    <a href="#book" class="btn btn--primary sidebar__cta">Book Appointment</a>
+
+  </aside>
+
+  <main class="page-main">
+
+  <!-- ============================================================
        HERO
   ============================================================ -->
   <section class="hero" id="hero">
@@ -399,6 +460,8 @@
       </div>
     </div>
   </footer>
+
+  </main>
 
   <script src="js/main.js"></script>
 </body>

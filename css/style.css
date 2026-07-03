@@ -33,6 +33,10 @@
   --shadow:       0 4px 20px rgba(30, 52, 72, 0.08);
   --shadow-hover: 0 8px 32px rgba(30, 52, 72, 0.14);
   --transition:   0.25s ease;
+
+  /* Sidebar */
+  --navbar-h:     70px;
+  --sidebar-w:    260px;
 }
 
 /* ============================================================
@@ -240,6 +244,128 @@ ul { list-style: none; }
 }
 
 /* ============================================================
+   SIDEBAR — fixed left panel
+============================================================ */
+.sidebar {
+  position: fixed;
+  top: var(--navbar-h);
+  left: 0;
+  width: var(--sidebar-w);
+  height: calc(100vh - var(--navbar-h));
+  overflow-y: auto;
+  background: var(--color-white);
+  border-right: 1px solid var(--color-border);
+  box-shadow: 2px 0 16px rgba(30, 52, 72, 0.06);
+  padding: 1.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 90;
+}
+
+.sidebar__profile {
+  text-align: center;
+  padding-bottom: 1.25rem;
+}
+
+.sidebar__avatar-wrap {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--color-green-light);
+  box-shadow: var(--shadow);
+}
+
+.sidebar__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar__name {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+
+.sidebar__credentials {
+  font-size: 0.78rem;
+  color: var(--color-green);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar__tagline {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.sidebar__divider {
+  border: none;
+  border-top: 1px solid var(--color-border);
+  margin-block: 1.25rem;
+}
+
+.sidebar__section-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.sidebar__topics ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: background var(--transition), color var(--transition);
+}
+
+.sidebar__link:hover {
+  background: var(--color-green-pale);
+  color: var(--color-green-dark);
+}
+
+.sidebar__link.is-active {
+  background: var(--color-green-pale);
+  color: var(--color-green);
+  font-weight: 600;
+}
+
+.sidebar__cta {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 0.65rem 1rem;
+}
+
+/* Main content offset */
+.page-main {
+  margin-left: var(--sidebar-w);
+}
+
+/* ============================================================
    HERO
 ============================================================ */
 .hero {
@@ -419,7 +545,7 @@ ul { list-style: none; }
 
 .topics__aside {
   position: sticky;
-  top: 100px;
+  top: calc(var(--navbar-h) + 1.5rem);
 }
 
 .topics__aside-image {
@@ -787,6 +913,10 @@ ul { list-style: none; }
    RESPONSIVE — TABLET (≤900px)
 ============================================================ */
 @media (max-width: 900px) {
+  /* Sidebar */
+  .sidebar    { display: none; }
+  .page-main  { margin-left: 0; }
+
   /* Navbar */
   .navbar__links {
     display: none;

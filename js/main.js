@@ -110,4 +110,16 @@
     observer.observe(el);
   });
 
+  /* ----------------------------------------------------------
+     Sidebar: keep --navbar-h in sync with actual navbar height
+  ---------------------------------------------------------- */
+  const navbarEl = document.querySelector('.navbar');
+  function syncNavbarHeight() {
+    if (navbarEl) {
+      document.documentElement.style.setProperty('--navbar-h', navbarEl.offsetHeight + 'px');
+    }
+  }
+  syncNavbarHeight();
+  window.addEventListener('resize', syncNavbarHeight, { passive: true });
+
 })();
